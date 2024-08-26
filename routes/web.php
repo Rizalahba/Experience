@@ -13,3 +13,4 @@ Route::get('/experiences/{id}', [ExperienceController::class, 'show'])->name('ex
 Route::post('/users', [UserController::class, 'store'])->name('users.store');
 Route::get('/experiences/{id}/edit', [ExperienceController::class, 'edit'])->name('experiences.edit');
 Route::put('/experiences/{id}', [ExperienceController::class, 'update'])->name('experiences.update');
+Route::delete('users/{user}', [UserController::class, 'destroy'])->name('users.destroy');
